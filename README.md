@@ -1,4 +1,20 @@
-# C# Lottery
+# C\# Lottery
+
+It’s a simple console game. Let the program generate four or six random whole numbers from 1 to 50 for a lottery game. You will then be granted an opportunity to guess the numbers. No any real prizes are granted, but you may consider yourself very lucky, especially if you guess 3+ numbers, since the chances of that happening are drastically low.
+
+How low, exactly?
+
+$$
+    P(n, k) = \frac{n!}{k!(n-k)!}
+$$
+
+For our case with six numbers, it is:
+
+$$
+P(6, 50) = \frac{50!}{6! \times (50 - 6)!} = \frac{50!}{6! \times 44!} = 15\,890\,700
+$$
+
+So, the chances of guessing all six numbers are about 1 in 15 million. Slightly better than the national Lotto, though (1 in 45 057 474, since the poll is from 1 to 59).
 
 ## How to run?
 
@@ -19,33 +35,16 @@ Steps:
 2. Navigate to the project root directory (where the `.csproj` file is):
 
     ```sh
-    cd ./csharp-lottery-homework
+    cd ./csharp-lottery-homework/
     ```
 
-3. Execute the `dotnet run` command to run the program or `dotnet build` to create binary executables from the source code. Executables can be later found in the `bin/` directory.
+3. Now you have two options:
 
-## Task details
+    - Execute the `dotnet run` command to build and run the program in debug mode;
+    - Execute the `dotnet publish` command to create binary executables from the source code. Executables can later be found in the `bin/Release/net8.0/{your_os}/publish/` directory. Just run it.
 
-Write a function `GenerateLotteryNumbers` which generates 4 random numbers between 1 and 50, and guarantees they are all different. It should return a Numbers object which is an instance of a class you have created. For example, the calling code would look something like this:
+### Download and run the compiled program
 
-```cs
-Numbers monday = GenerateLotteryNumbers();
-Console.WriteLine($"Monday: {monday.n1} {monday.n2} {monday.n3} {monday.n4}");
-
-Numbers friday = GenerateLotteryNumbers();
-Console.WriteLine($"Friday: {friday.n1} {friday.n2} {friday.n3} {friday.n4}");
-```
-
-Create a second function CheckPrize which can be used like the snippet below. The prizes are: £1 for 1 matching number, £5 for 2, £50 for 3, and £250 for all 4 matching
-
-```cs
-Numbers lotto = GenerateLotteryNumbers();
-int prize = CheckPrize(lotto, 23, 14, 6, 49);
-Console.WriteLine($"You won £{prize}");
-```
-
-## Extra notes
-
-Complete the task and add extra functionality to make sure you’re using what we’ve learnt so far.
-
-Try to make it bug-free, and able to handle anything the user tries to input.
+1. Navigate to the <https://github.com/brown-berries-17/csharp-lottery-homework/releases>;
+2. Download the suitable for your system executable (x64 Linux or Windows OS; No Mac OS, pardon me, try building from the source);
+3. Run the executable. Installation and/or root (administrative) privileges should not be required.
