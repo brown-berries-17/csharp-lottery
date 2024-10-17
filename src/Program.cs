@@ -63,7 +63,7 @@ class Program {
         Console.WriteLine(String.Empty);
 
         if (usrOption.Key == ConsoleKey.Q) {
-          Console.WriteLine("Thanks for playing. Se you later!");
+          Console.WriteLine("Thanks for playing. See you later!");
           keepPlaying = false;
           break;
         } else if (usrOption.Key == ConsoleKey.Enter) {
