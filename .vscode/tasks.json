@@ -7,7 +7,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/csharp-lottery-homework.csproj",
+        "${workspaceFolder}/csharp-lottery.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary;ForceNoAlign"
       ],
@@ -19,7 +19,7 @@
       "type": "process",
       "args": [
         "publish",
-        "${workspaceFolder}/csharp-lottery-homework.csproj",
+        "${workspaceFolder}/csharp-lottery.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary;ForceNoAlign"
       ],
@@ -33,7 +33,7 @@
         "watch",
         "run",
         "--project",
-        "${workspaceFolder}/csharp-lottery-homework.csproj"
+        "${workspaceFolder}/csharp-lottery.csproj"
       ],
       "problemMatcher": "$msCompile"
     }
