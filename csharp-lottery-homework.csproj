@@ -1,7 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <Configuration>Release</Configuration>
     <OutputType>Exe</OutputType>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
     <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>csharp_lottery_homework</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>

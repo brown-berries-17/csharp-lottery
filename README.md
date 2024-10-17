@@ -1,5 +1,29 @@
 # C# Lottery
 
+## How to run?
+
+### Build from source code
+
+Requirements:
+
+- .NET SDK ver. 8.0+
+
+Steps:
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/brown-berries-17/csharp-lottery-homework
+   ```
+
+2. Navigate to the project root directory (where the `.csproj` file is):
+
+    ```sh
+    cd ./csharp-lottery-homework
+    ```
+
+3. Execute the `dotnet run` command to run the program or `dotnet build` to create binary executables from the source code. Executables can be later found in the `bin/` directory.
+
 ## Task details
 
 Write a function `GenerateLotteryNumbers` which generates 4 random numbers between 1 and 50, and guarantees they are all different. It should return a Numbers object which is an instance of a class you have created. For example, the calling code would look something like this:
