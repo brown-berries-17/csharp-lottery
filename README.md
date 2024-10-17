@@ -29,13 +29,13 @@ Steps:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/brown-berries-17/csharp-lottery-homework
+   git clone https://github.com/brown-berries-17/csharp-lottery
    ```
 
 2. Navigate to the project root directory (where the `.csproj` file is):
 
     ```sh
-    cd ./csharp-lottery-homework/
+    cd ./csharp-lottery/
     ```
 
 3. Now you have two options:
@@ -45,6 +45,6 @@ Steps:
 
 ### Download and run the compiled program
 
-1. Navigate to the <https://github.com/brown-berries-17/csharp-lottery-homework/releases>;
+1. Navigate to the <https://github.com/brown-berries-17/csharp-lottery/releases>;
 2. Download the suitable for your system executable (x64 Linux or Windows OS; No Mac OS, pardon me, try building from the source);
 3. Run the executable. Installation and/or root (administrative) privileges should not be required.
