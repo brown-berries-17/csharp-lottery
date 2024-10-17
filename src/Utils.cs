@@ -1,3 +1,7 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
 static class Utils {
   public static string RequestLine(string msg) {
     Console.Write(msg);

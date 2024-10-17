@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 class Lottery {
   private readonly HashSet<int> numbers = [];
   public List<int> Numbers {
