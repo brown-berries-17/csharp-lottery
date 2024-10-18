@@ -27,7 +27,7 @@ static class Utils {
 
   public static string NumbersAsString(List<int> nums) {
     nums.Sort();
-    var nums2 = nums.Select(num => num > 9 ? "" + num : "0" + num);
+    var nums2 = nums.Select(num => num > 9 ? "" + num : " " + num);
     return String.Join(", ", nums2);
   }
 }
