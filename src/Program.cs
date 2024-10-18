@@ -42,7 +42,7 @@ class Program {
         }
 
         Console.WriteLine();
-        Console.WriteLine($"\"{usrMode}\" is not a valid option.");
+        Console.WriteLine($"“{usrMode}” is not a valid option.");
         Console.WriteLine($"Enter “standard” or “1” to play a lottery with six numbers OR");
         Console.WriteLine($"“short” or “2” to play a lottery with four numbers.");
 
@@ -100,7 +100,7 @@ class Program {
           Console.WriteLine();
           break;
         } else {
-          Console.WriteLine($"\"{usrOption.KeyChar}\" is not a valid option.");
+          Console.WriteLine($"“{usrOption.KeyChar}” is not a valid option.");
         }
 
       } while (true);
