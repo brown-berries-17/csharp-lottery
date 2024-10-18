@@ -1,20 +1,22 @@
 # C\# Lottery
 
+## About
+
 It’s a simple console game. Let the program generate four or six random whole numbers from 1 to 50 for a lottery game. You will then be granted an opportunity to guess the numbers. No any real prizes are granted, but you may consider yourself very lucky, especially if you guess 3+ numbers, since the chances of that happening are drastically low.
 
 How low, exactly?
 
 $$
-    P(n, k) = \frac{n!}{k!(n-k)!}
+  ^nC_r = \binom{n}{r} = \frac{n!}{r!(n - r)!}
 $$
 
 For our case with six numbers, it is:
 
 $$
-P(6, 50) = \frac{50!}{6! \times (50 - 6)!} = \frac{50!}{6! \times 44!} = 15\,890\,700
+  ^nC_r = \binom{n}{r} = \frac{50!}{6! \times (50 - 6)!} = \frac{50!}{6! \times 44!} = 15\,890\,700
 $$
 
-So, the chances of guessing all six numbers are about 1 in 15 million. Slightly better than the national Lotto, though (1 in 45 057 474, since the poll is from 1 to 59).
+So, the chances of guessing all six numbers are about 1 in 15 million. Slightly better than the national Lotto, though (1 in 45 057 474, since the poll there is from 1 to 59).
 
 ## How to run?
 
