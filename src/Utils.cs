@@ -11,7 +11,7 @@ static class Utils {
   }
 
   public static void WriteAndPause(string msg, string? pauseMsg = null) {
-    pauseMsg ??= $"{Environment.NewLine}Press “Enter” to continue...";
+    pauseMsg ??= $"{Environment.NewLine}Press any key to continue...";
 
     Console.Write(msg);
     Console.Write(pauseMsg);
