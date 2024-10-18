@@ -10,10 +10,7 @@ static class Utils {
     return Console.ReadLine() ?? String.Empty;
   }
 
-  public static void WriteAndPause(
-    string msg,
-    string? pauseMsg = null
-  ) {
+  public static void WriteAndPause(string msg, string? pauseMsg = null) {
     pauseMsg ??= $"{Environment.NewLine}Press “Enter” to continue...";
 
     Console.Write(msg);
