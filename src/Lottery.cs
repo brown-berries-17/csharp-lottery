@@ -29,13 +29,17 @@ class Lottery {
   }
 
   public Lottery(int maxNums, int minNum, int maxNum) {
-    Random rng = new Random();
+    // Random rng = new Random();
 
     for (int i = 0; i < maxNums; i++) {
       int rndNum;
 
       do {
-        rndNum = rng.Next(minNum, maxNum);
+        // Random.Next() is not thread safe
+        // it breaks if the same instance is called from different threads at the same time
+        // I know I don’t work much with threading in this project,
+        // but it’s good to know for the future
+        rndNum = Random.Shared.Next(minNum, maxNum);
       } while (numbers.Contains(rndNum));
 
       this.numbers.Add(rndNum);
