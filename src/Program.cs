@@ -1,4 +1,5 @@
-﻿using System;
+﻿// dotnet publish fails if I don’t explicitly include the libraries
+using System;
 using System.Linq;
 using System.Threading;
 using System.Collections.Generic; 
@@ -127,6 +128,8 @@ class Program {
           nums = tempLottery.NumbersAsString;
         }
 
+        // this is completely broken
+        // if the window width is less than needed and the text starts to wrap
         Console.Write("Generating lottery numbers... ");
         Console.Write( mask.Substring(0, i) );
         Console.Write( nums.Substring(i, nums.Length - i) );
