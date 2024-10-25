@@ -49,4 +49,4 @@ Steps:
 
 1. Navigate to the <https://github.com/brown-berries-17/csharp-lottery/releases>;
 2. Download the suitable for your system executable (x64 Linux or Windows OS; No Mac OS, pardon me, try building from the source);
-3. Run the executable. Installation and/or root (administrative) privileges should not be required.
+3. Run the executable. Installation and/or root (administrative) privileges shall not be required.
